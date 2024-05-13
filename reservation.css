@@ -1,0 +1,91 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+body{
+    font-family:'Times New Roman', Times, serif;
+}
+root{
+    --green:#005B41;
+     --pink  :#FF6969;
+    --white:#FCFFE7;
+    --darkblue:#2B3467;
+    --grey:#393E46;
+}
+.res-banner{
+    min-height: 100vh;
+    background-image: url('./images/reser-img4.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:whitesmoke;
+    padding-bottom: 20px;
+}
+.card-container{
+    display: grid;
+    grid-template-columns: 350px 350px;
+}
+.card-image{
+    background: url('./images/reser-img2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.res-banner h2{
+     padding-bottom:40px; 
+    margin-bottom: 20px; 
+}
+.card-content{
+    background:white;
+    height:350px;
+    
+}
+.card-content h3{
+    text-align: center;
+    color:yellowgreen;
+    paddding:20px 0 10px 0;
+    font-size: 30px;
+}
+.form-row{
+    display: flex;
+    width:90%;
+    margin:0 auto;
+}
+form select, form input{
+    display: block;
+    width:100%;
+    margin:15px 12px;
+    padding: 5px; 
+    font-size:15px;
+    outline: none;
+    border:none;
+    border-bottom: 1px solid black;
+}
+
+form input[type="submit"]{
+    color:#005B41;
+    background:yellow;
+    padding:12px 0px;
+    border-radius: 4px;
+    cursor: pointer;
+
+}
+ .card-content a{
+    margin:10px 40px;
+    text-decoration: none;
+    font-size: 25px;
+}
+@media(max-width:900px){
+    .card-container{
+        grid-template-columns: 100%;
+    
+    }
+    .card-image{
+        height: 350px;
+    }
+}

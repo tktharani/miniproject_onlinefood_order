@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="stylemenu.css"> -->
+    <title>Resturant Menu</title>
+    <style>
+        *{ 
+            margin:0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: whitesmoke;
+            font-family:'Times New Roman', Times, serif;
+        }
+        .menu{
+            /* padding:0 10px 30px 10px; */
+            display: grid;
+            grid-template-columns:repeat(auto-fit,minmax(450px,1fr)) ;
+            gap:20px 40px;
+            margin:10px;
+
+        }
+        .heading{                      
+            background-color: lightblue;
+            color:white;
+            margin-bottom:30px;
+            padding:30px 0;
+            grid-column: 1/-1;
+            text-align: center;
+        }
+        .heading>h1{
+            font-weight: 400;
+            font-size: 30px;
+            letter-spacing: 10px;
+            margin-bottom:10px;
+            text-transform: uppercase;
+
+        }
+        .heading>h3{
+            font-weight: 600;
+            font-size:22px;
+            letter-spacing: 5px;
+            text-transform: uppercase;
+        }
+        .food-items{
+            display: grid;
+            position: relative;
+            grid-template-rows: auto 1fr;
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(0, 0, 0.1);
+        }
+        .food-items img{
+            position: relative;
+            width:100%;
+            border-radius: 15px 15px 0 0;;           
+        }
+        
+        .details{
+            padding:20px 10px;
+            display: grid;
+            grid-template-rows:auto 1fr 50px;
+            row-gap:15px;
+            
+        }
+        .details-sub{
+            display: grid;
+            grid-template-columns: auto auto;
+        }
+        .details-sub>h5{
+            font-weight:500;
+            font-size:25px;
+        }
+        .price{
+            text-align:right;
+        }
+       .details>p{
+        font-size:15px;
+        line-height:28px;
+        font-weight:400;
+        align-self:stretch;
+       }
+       .details>button{
+        background-color: lightpink;
+        border:none;
+        color:black;
+        font-size:16px;
+        font-weight:600;
+        border-radius: 5px;
+        width:180px;
+        cursor: pointer;
+       }
+        a{
+        font-size:30px;
+        text-decoration: none;
+        border:2px solid gold;
+        border-radius: 10px;
+        background-color:gold;
+        color:yellowgreen;
+        margin:10px 50px;
+       }
+        
+        
+           
+    </style>
+</head>
+<body>
+    <div class="menu">
+       <div class="heading">
+          <h1>Chop & Hop</h1>
+          <h3>&mdash; menu &mdash;</h3>
+       </div>
+        <div class="food-items">
+          <img src="./images/breakfast1.jpg">
+            <div class="details">
+               <div class="details-sub">
+                <h5>Breakfast combo</h5>
+                <h5 class="price">&#8377;145</h5>
+                </div>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure consequuntur quia ipsa! Atque, modi. Corporis.</p>
+              <button>Add To Cart</button>
+            </div>
+         </div>
+         <div class="food-items">
+            <img src="./images/breakfast3.jpg">
+              <div class="details">
+                 <div class="details-sub">
+                  <h5>Dosa</h5>
+                  <h5 class="price">&#8377;80</h5>
+                  </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure consequuntur quia ipsa! Atque, modi. Corporis.</p>
+                <button>Add To Cart</button>
+              </div>
+           </div>
+           <div class="food-items">
+            <img src="./images/breakfast4.jpg">
+              <div class="details">
+                 <div class="details-sub">
+                  <h5>Parotta</h5>
+                  <h5 class="price">&#8377;45</h5>
+                  </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure consequuntur quia ipsa! Atque, modi. Corporis.</p>
+                <button>Add To Cart</button>
+              </div>
+           </div>
+           <div class="food-items">
+            <img src="./images/breakfast5.jpg">
+              <div class="details">
+                 <div class="details-sub">
+                  <h5> puttu</h5>
+                  <h5 class="price">&#8377;60</h5>
+                  </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure consequuntur quia ipsa! Atque, modi. Corporis.</p>
+                <button>Add To Cart</button>
+              </div>
+           </div>
+           <div class="food-items">
+            <img src="./images/briyani.jpg">
+              <div class="details">
+                 <div class="details-sub">
+                  <h5> Briyani</h5>
+                  <h5 class="price">&#8377;180</h5>
+                  </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure consequuntur quia ipsa! Atque, modi. Corporis.</p>
+                <button>Add To Cart</button>
+              </div>
+           </div>
+           <div class="food-items">
+            <img src="./images/pot briyani.jpg">
+              <div class="details">
+                 <div class="details-sub">
+                  <h5>Briyani</h5>
+                  <h5 class="price">&#8377;245</h5>
+                  </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure consequuntur quia ipsa! Atque, modi. Corporis.</p>
+                <button>Add To Cart</button>
+              </div>
+           </div>
+           <div class="food-items">
+            <img src="./images/grill.jpg">
+              <div class="details">
+                 <div class="details-sub">
+                  <h5>Grilled fish</h5>
+                  <h5 class="price">&#8377;245</h5>
+                  </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure consequuntur quia ipsa! Atque, modi. Corporis.</p>
+                <button>Add To Cart</button>
+              </div>
+           </div>
+           <div class="food-items">
+            <img src="./images/burger1.jpg">
+              <div class="details">
+                 <div class="details-sub">
+                  <h5> chicken burger</h5>
+                  <h5 class="price">&#8377;145</h5>
+                  </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure consequuntur quia ipsa! Atque, modi. Corporis.</p>
+                <button>Add To Cart</button>
+              </div>
+           </div>
+           <div class="food-items">
+            <img src="./images/burger2.jpg">
+              <div class="details">
+                 <div class="details-sub">
+                  <h5 >Veg burger</h5>
+                  <h5 class="price">&#8377;110</h5>
+                  </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure consequuntur quia ipsa! Atque, modi. Corporis.</p>
+                <button>Add To Cart</button>
+              </div>
+           </div>
+           <div class="food-items">
+            <img src="./images/burger3.jpg">
+              <div class="details">
+                 <div class="details-sub">
+                  <h5>Double layer burger</h5>
+                  <h5 class="price">&#8377;245</h5>
+                  </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure consequuntur quia ipsa! Atque, modi. Corporis.</p>
+                <button>Add To Cart</button>
+              </div>
+           </div>
+           <div class="food-items">
+            <img src="./images/pizza.jpg">
+              <div class="details">
+                 <div class="details-sub">
+                  <h5>Pepperoni Pizza</h5>
+                  <h5 class="price">&#8377;245</h5>
+                  </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure consequuntur quia ipsa! Atque, modi. Corporis.</p>
+                <button>Add To Cart</button>
+              </div>
+           </div>
+           <div class="food-items">
+            <img src="./images/pizza2.jpg">
+              <div class="details">
+                 <div class="details-sub">
+                  <h5>Veg pizza</h5>
+                  <h5 class="price">&#8377;195</h5>
+                  </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure consequuntur quia ipsa! Atque, modi. Corporis.</p>
+                <button>Add To Cart</button>
+              </div>
+           </div>
+           <div class="food-items">
+            <img src="./images/chickencurry.jpg">
+              <div class="details">
+                 <div class="details-sub">
+                  <h5>Chicken Curry</h5>
+                  <h5 class="price">&#8377;280</h5>
+                  </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure consequuntur quia ipsa! Atque, modi. Corporis.</p>
+                <button>Add To Cart</button>
+              </div>
+           </div>
+           <div class="food-items">
+            <img src="./images/chickentikka.jpg">
+              <div class="details">
+                 <div class="details-sub">
+                  <h5>Chicken Tikka</h5>
+                  <h5 class="price">&#8377;250</h5>
+                  </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure consequuntur quia ipsa! Atque, modi. Corporis.</p>
+                <button>Add To Cart</button>
+              </div>
+           </div>
+           <div class="food-items">
+            <img src="./images/grill.jpg">
+              <div class="details">
+                 <div class="details-sub">
+                  <h5>fish</h5>
+                  <h5 class="price">&#8377;145</h5>
+                  </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure consequuntur quia ipsa! Atque, modi. Corporis.</p>
+                <button>Add To Cart</button>
+              </div>
+           </div>
+           <footer>
+            <!-- <a href="index.html">Back to Home</a> -->
+           </footer>
+     </div>
+ 
+ </body>
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    *{
+    margin:0px;
+    padding:0px;
+    font-family: font-family: 'Roboto Mono', monospace;
+    }
+    :root{
+    --green:#005B41;
+    --pink  :#FF6969;
+    --white:#FCFFE7;
+    --darkblue:#2B3467;
+    --grey:#393E46;
+    }
+    .heading{
+        width:90%;
+        display: flex;
+        /* justify-content: center; */
+        align-items: center; 
+        flex-direction: column;
+        text-align: center; 
+        margin:20px auto;
+    }
+    .heading h2{
+        font-size:40px;
+        color:var(--darkblue);
+        margin-bottom:25px;
+        
+    }
+    .heading p{
+        font-size:18px;
+        color:var(--grey);
+        margin-bottom:35px;
+    }
+    .container{
+        width:90%;
+        margin: 0 auto;
+        padding:10px 20px;
+    }
+    .about{
+        display: flex;
+        /* justify-content: space-between; */
+        /* align-items: center; */
+        flex-wrap: wrap;
+    }
+    .about-image{
+        flex:1;
+        /* margin-right:40px; */
+        overflow:hidden;
+    }
+    .about-image:hover img{
+        transform: scale(1.5);
+    }
+    .about-image img{
+        max-width: 100%;
+        height:auto;
+        display: block;
+        transition: 0.5s ease;
+    }
+    .about-content{
+        flex:1;
+    }
+    .about-content h3{
+        font-size: 25px;
+        top:50px;
+        margin-bottom:5px;
+        color: var(--green);
+
+    }
+    .about-content p{
+        font-size:15px;
+        line-height: 1.8;
+        color:var(--grey);
+    }
+    .about-content .read-more{
+        display: inline-block;
+        padding:10px 20px;
+        background-color: var(--green);
+        color:var(--white);
+        font-size: 20px;
+        text-decoration: none;
+        border-radius: 20px;
+        margin-top: 15px;
+    }
+    .about-content .read-more:hover{
+        background-color: var(--pink);
+    }
+    @media (max-width:768px){
+        /* .heading{
+            padding: 0px 20px;
+        } */
+        /* .heading h2{
+            font-size:36px;
+        } */
+         /* .heading p{
+            font-size:17px; 
+             margin-bottom:0px;
+        }  */
+        /* .container{
+            padding:0px;
+        } */
+        .about{
+            padding:20px;
+            flex-direction: column;
+        }
+        .about-image{
+            margin-right: 0px; 
+            margin-bottom: 20px; 
+        }
+        .about-content p{
+            padding: 0px;
+            font-size: 16px;
+        }
+        .about-content .read-more{
+            font-size:16px;
+        }
+    }
+    </style>
+</head>
+<body>
+    <div class="heading">
+        <h2>About-Us</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure iusto perspiciatis similique eligendi consequuntur soluta praesentium modi eos voluptatibus saepe nobis consequatur voluptate aspernatur assumenda neque voluptates, repellendus expedita exercitationem tenetur l
+            ibero, minus itaque. Error veniam molestiae porro magni quidem?</p>
+    </div>
+    <div class="container">
+        <section class="about">
+            <div class="about-image">
+                <img src="./images/aboutus img.jpg">
+            </div>
+            <div class="about-content">
+                <h3>We Provide Good Quality Food</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi laboriosam ipsa labore minus ipsam itaque dolorum quaerat ullam laudantium eaque doloremque enim amet modi quis, tempore 
+                    quidem ex odio eum veniam. Molestiae labore, ipsam cumque earum sunt repellendus. Sequi, eveniet!Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae eveniet ut eum porro nobis architecto? A facere nisi quasi aperiam quod numquam, dignissimos vero beatae itaque ipsum delectus? Iusto consectetur quia quod hic voluptatibus magnam, ab molestias omnis exercitationem vitae id distinctio 
+                    illum aliquam quidem modi ducimus ipsum odit explicabo.Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis dicta incidunt illo nisi nostrum dignissimos, nemo eveniet
+                     modi nihil unde ut soluta blanditiis libero aliquam, distinctio temporibus hic eligendi aut!Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi aliquid rem libero magni, praesentium soluta eum molestias distinctio vel autem labore, aliquam fuga, 
+                    necessitatibus culpa aspernatur ipsum. Quae, neque voluptates?Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore ducimus illo doloremque, 
+                    dignissimos possimus dolorem corporis? Esse porro quidem vel praesentium nostrum aliquid 
+                    consequatur optio quo? Cupiditate illo minus voluptate numquam! Dolor vero recusandae dolores modi tempora dicta debitis ad maiores quaerat,
+                     id corrupti velit labore numquam, explicabo libero itaque!loerm30
+                    </p>
+                     <a href=" " class="read-more">Read more</a>
+                     <a href="index.html">Back to Home</a>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
+
